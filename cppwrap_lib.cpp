@@ -15,6 +15,12 @@ DoubleKeeper::DoubleKeeper (double factor)
 {
 }
 
+DoubleKeeper2::DoubleKeeper2 (double factor)
+    : DoubleKeeper (factor)
+{
+}
+
+
 DoubleKeeper::~DoubleKeeper ()
 {
 }

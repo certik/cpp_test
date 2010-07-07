@@ -1,3 +1,5 @@
+set +e
+
 cython --cplus cppwrap.pyx
 g++ -c -o cppwrap_lib.o cppwrap_lib.cpp
 g++ -I$SAGE_LOCAL/include/python2.6/ -c -o cppwrap.o cppwrap.cpp

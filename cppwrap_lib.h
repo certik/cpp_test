@@ -6,6 +6,7 @@ double doublefunc (double a, double b, double c);
 
 class DoubleKeeper
 {
+protected:
     double number;
 
 public:
@@ -21,8 +22,7 @@ double transmogrify_from_cpp (DoubleKeeper const *obj, double value);
 
 class DoubleKeeper2: public DoubleKeeper
 {
-    double number;
-
 public:
+    DoubleKeeper2 (double number);
     virtual double transmogrify (double value) const;
 };

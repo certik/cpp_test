@@ -9,4 +9,7 @@ cdef extern from "cppwrap_lib.h":
         double get_number()
         double transmogrify(double value)
 
+    cdef cppclass DoubleKeeper2(DoubleKeeper):
+        DoubleKeeper2(double factor)
+
     double transmogrify_from_cpp (DoubleKeeper *obj, double value)
