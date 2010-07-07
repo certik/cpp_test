@@ -18,3 +18,11 @@ public:
 };
 
 double transmogrify_from_cpp (DoubleKeeper const *obj, double value);
+
+class DoubleKeeper2: public DoubleKeeper
+{
+    double number;
+
+public:
+    virtual double transmogrify (double value) const;
+};

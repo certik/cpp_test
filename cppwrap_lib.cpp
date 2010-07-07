@@ -35,6 +35,12 @@ DoubleKeeper::transmogrify (double value) const
     return value*number;
 }
 
+double
+DoubleKeeper2::transmogrify (double value) const
+{
+    return value+number;
+}
+
 
 double
 transmogrify_from_cpp (DoubleKeeper const *obj, double value)
