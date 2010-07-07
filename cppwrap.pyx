@@ -32,22 +32,7 @@ cdef class DoubleKeeper:
         return self.keeper.transmogrify(value)
 
 cdef class DoubleKeeper2(DoubleKeeper):
-    cdef cppwrap_lib.DoubleKeeper2* keeper2
-
-    def __cinit__(self, double number):
-        self.keeper2 = new cppwrap_lib.DoubleKeeper2(number)
-
-    def __dealloc__(self):
-        del self.keeper2
-
-    def set_number(self, double number):
-        self.keeper2.set_number(number)
-
-    def get_number(self):
-        return self.keeper2.get_number()
-
-    def transmogrify(self, double value):
-        return self.keeper2.transmogrify(value)
+    pass
 
 def voidfunc():
     """
