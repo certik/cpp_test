@@ -32,7 +32,9 @@ cdef class DoubleKeeper:
         return self.keeper.transmogrify(value)
 
 cdef class DoubleKeeper2(DoubleKeeper):
-    pass
+
+    def __cinit__(self, double number):
+        self.keeper = new cppwrap_lib.DoubleKeeper2(number)
 
 def voidfunc():
     """
