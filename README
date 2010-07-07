@@ -9,7 +9,6 @@ Run
 $ ./test.py
 Initializing DoubleKeeper
 30.0
-Initializing DoubleKeeper
 Initializing DoubleKeeper2
 11.0
 30.0
