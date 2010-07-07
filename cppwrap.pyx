@@ -16,7 +16,7 @@ cdef class DoubleKeeper:
     """
     cdef cppwrap_lib.DoubleKeeper* keeper
 
-    def __cinit__(self, double number):
+    def __init__(self, double number):
         print "Initializing DoubleKeeper"
         self.keeper = new cppwrap_lib.DoubleKeeper(number)
 
@@ -34,7 +34,7 @@ cdef class DoubleKeeper:
 
 cdef class DoubleKeeper2(DoubleKeeper):
 
-    def __cinit__(self, double number):
+    def __init__(self, double number):
         print "Initializing DoubleKeeper2"
         self.keeper = new cppwrap_lib.DoubleKeeper2(number)
 
