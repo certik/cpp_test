@@ -4,6 +4,7 @@ cdef extern from "cppwrap_lib.h":
     double doublefunc(double a, double b, double c)
 
     cdef cppclass DoubleKeeper:
+        DoubleKeeper()
         DoubleKeeper(double factor)
         void set_number(double f)
         double get_number()
