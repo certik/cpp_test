@@ -47,6 +47,11 @@ DoubleKeeper2::transmogrify (double value) const
     return value+number;
 }
 
+double DoubleKeeper2::get_number2 (int p) const
+{
+    return number+p;
+}
+
 
 double
 transmogrify_from_cpp (DoubleKeeper const *obj, double value)

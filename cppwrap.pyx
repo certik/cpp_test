@@ -38,6 +38,9 @@ cdef class DoubleKeeper2(DoubleKeeper):
         print "Initializing DoubleKeeper2"
         self.keeper = new cppwrap_lib.DoubleKeeper2(number)
 
+    def get_number2(self, int p):
+        return (<cppwrap_lib.DoubleKeeper2*>self.keeper).get_number2(p)
+
 def voidfunc():
     """
     >>> voidfunc()

@@ -12,5 +12,6 @@ cdef extern from "cppwrap_lib.h":
 
     cdef cppclass DoubleKeeper2(DoubleKeeper):
         DoubleKeeper2(double factor)
+        double get_number2(int p)
 
     double transmogrify_from_cpp (DoubleKeeper *obj, double value)

@@ -24,5 +24,6 @@ class DoubleKeeper2: public DoubleKeeper
 {
 public:
     DoubleKeeper2 (double number);
+    double get_number2 (int p) const;
     virtual double transmogrify (double value) const;
 };
